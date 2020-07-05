@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="reset.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<div class="image-book">
+		<div class="error-box">
+			<h1 class="sorry-found-error-text">Sorry. <strong class="found-of-404-mark-text">404</strong>Page Not Found.</h1>
+			<p class="not-found-pages">ページが見つかりませんでした。</p>
+
+			<div class="border-pages-404"></div>
+			<div class="error-text-box">
+				<h3 class="bottom-think-error">以下の原因が考えられます。</h3>
+
+				<li class="error-think-li">ブラウザのアドレスバーに入力したURLが間違っている。</li>
+				<li class="error-think-li">リンク切れを起こしている。</li>
+				<li class="error-think-li">すでに存在しないページである。</li>
+				<div class="gametrigget-text-box">
+					<h3 class="go-to-top-page-gametrigger">
+						<a href="" class="go-to-topGametrigger-link">
+							<!-- ヒカキンのページ！ -->
+							GameTriggerトップページへ
+						</a>
+					</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		.go-to-topGametrigger-link{
+		    color: #117ec6;
+		    text-decoration: none;
+		}
+		.go-to-topGametrigger-link:hover{
+			text-decoration: underline;
+		}
+		.go-to-top-page-gametrigger{
+
+		}
+		.gametrigget-text-box{
+		    padding-bottom: 20px;
+			padding-top: 30px;
+			padding-left: 30px;
+		}
+		.error-text-box{
+			background-color: #eeeeee;
+			margin: 0 auto;
+			border-radius: 15px;
+			max-width: 700px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			border: 1px solid #aaa;
+		}
+		.error-box{
+			position: relative;
+			z-index: 2;
+		}
+		.bottom-think-error{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+			font-size: 20px;
+			color: #d14;
+		}
+		.error-think-li{
+			text-align: center;
+			color: #000000;
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+		.image-book{
+			background-image: url("book.jpg");
+			width: 100%;
+			padding-bottom: 100px;
+			background-size: cover;
+			position: relative;
+			font-family: "游ゴシック", sans-serif;
+
+		}
+		.image-book::before{
+			  background-color: rgba(0,0,0,0.1);
+			  /* 自由に位置指定 */
+			  position: absolute;
+			  top: 0;
+			  right: 0;
+			  bottom: 0;
+			  left: 0;
+			  content: ' ';
+		}
+		.not-found-pages{
+			text-align: center;
+			font-size: 25px;
+			padding-bottom: 10px;
+			font-weight: bold;
+			color: #ffffff;
+		}
+		.border-pages-404{
+			border-bottom: 2px solid #dddddd;
+			margin-bottom: 30px;
+		}
+		.found-of-404-mark-text{
+			color: #d14;
+		}
+		.error-box{
+			/*background-color: #ddd;*/
+		}
+		.four-error-text{
+			color: red;
+		}
+		.sorry-found-error-text{
+			font-size: 40px;
+			margin: 0 ;
+			text-align: center;
+			color: #fff;
+			line-height: 300px;
+		}
+		@media screen and (max-width: 480px){
+			.sorry-found-error-text{
+				font-size: 25px;
+			}
+			.not-found-pages{
+				font-size: 20px;
+			}
+		}
+	</style>
+</body>
+</html>
