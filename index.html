@@ -8,9 +8,8 @@
 <body>
 	<div class="image-book">
 		<div class="error-box">
-			<div class="space-logo-gametrigger-box"></div>
 			<div class="logo-gametrigger-box">
-				<img src="logo.png" class="logo-gametriggger">
+				<img src="logo.png" class="logo-gametrigger">
 			</div>
 			<h1 class="sorry-found-error-text">Sorry. <strong class="found-of-404-mark-text">404</strong>Page Not Found.</h1>
 			<p class="not-found-pages">ページが見つかりませんでした。</p>
@@ -34,19 +33,15 @@
 	</div>
 
 	<style>
-		.space-logo-gametrigger-box{
-			padding-top: 30px;
-		}
+
 		.logo-gametrigger-box{
-			max-width: 500px;
 			margin: 0 auto;
 			background-color: #dddddd;
 			border-radius: 15px;
-		}
-		.logo-gametriggger{
 			text-align: center;
-			width: 100%;
+			padding-top: 10px;
 		}
+
 		.go-to-topGametrigger-link{
 		    color: #117ec6;
 		    text-decoration: none;
@@ -56,6 +51,7 @@
 		}
 		.go-to-top-page-gametrigger{
 			text-align: center;
+			height: 50px;
 		}
 		.gametrigget-text-box{
 		    padding-bottom: 20px;
@@ -134,11 +130,19 @@
 			line-height: 300px;
 		}
 		@media screen and (max-width: 480px){
+
+			.not-found-pages{
+				font-size: 20px;
+			}
+		}
+		@media screen and (max-width: 520px){
 			.sorry-found-error-text{
 				font-size: 25px;
 			}
-			.not-found-pages{
-				font-size: 20px;
+		}
+		@media screen and (max-width: 800px){
+			.logo-gametrigger{
+				width: 100%;
 			}
 		}
 	</style>
